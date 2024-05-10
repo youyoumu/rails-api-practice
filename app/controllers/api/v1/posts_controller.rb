@@ -1,5 +1,6 @@
 class Api::V1::PostsController < ApiController
   before_action :set_post, only: %i[show edit update destroy]
+  before_action :doorkeeper_authorize!
 
   def index
     posts = Post.all

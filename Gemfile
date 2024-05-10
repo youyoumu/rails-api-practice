@@ -67,3 +67,5 @@ group :test do
 end
 
 gem "doorkeeper", "~> 5.7"
+
+gem "devise", "~> 4.9"

@@ -1,4 +1,4 @@
-class Api::V1::PostsController < ApplicationController
+class Api::V1::PostsController < ApiController
   before_action :set_post, only: %i[show edit update destroy]
 
   def index

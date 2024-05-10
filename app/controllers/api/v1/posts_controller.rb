@@ -4,7 +4,8 @@ class Api::V1::PostsController < ApiController
 
   def index
     posts = Post.all
-    render json: posts
+    current_user = current_resource_owner
+    render json: {posts: posts, data: current_user}
   end
 
   def show

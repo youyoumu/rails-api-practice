@@ -13,3 +13,5 @@ end
 
 # example url for oauth:
 # http://127.0.0.1:3000/oauth/authorize?client_id=YObHzt_AH8j0D4j3LfJD82C_Dz-oy-UdYpGpaOhrG7g&response_type=code&redirect_uri=http://localhost:3000
+# tutorial:
+# https://github.com/doorkeeper-gem/doorkeeper/wiki/Interacting-as-an-OAuth-client-with-Doorkeeper

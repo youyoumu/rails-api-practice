@@ -7,3 +7,9 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+if Doorkeeper::Application.count.zero?
+  Doorkeeper::Application.create(name: "React client development", redirect_uri: "http://localhost:3000", scopes: ["read", "write"])
+end
+
+# example url for oauth:
+# http://127.0.0.1:3000/oauth/authorize?client_id=YObHzt_AH8j0D4j3LfJD82C_Dz-oy-UdYpGpaOhrG7g&response_type=code&redirect_uri=http://localhost:3000
